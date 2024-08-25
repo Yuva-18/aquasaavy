@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUASAVVY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="name">
+            <h1>AQUASAVVY</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="./loginpage/login.html">Login</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="./irrigationpage/irri.html">Irrigation</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toogleMenu()"></i>
+
+
+        </div>
+    </nav>
+    <div class="images" id="#home">
+        <img src="images/image1.jpg" alt="img1">
+    </div>
+
+
+    <div class="info" id="info">
+
+        <h2>Information</h2>
+        <div class="info-box">
+            <h2>Our Mission</h2>
+            <p>
+
+                At Smart Irrigation Solutions, our mission is to transform the agricultural landscape through
+                cutting-edge technology and data-driven insights.
+                We are dedicated to delivering a comprehensive smart irrigation system via a user-friendly mobile
+                application designed to meet the needs of modern farmers and gardeners.
+                Our goal is to provide real-time monitoring of soil moisture levels, weather conditions, and system
+                performance, allowing users to make informed decisions and apply precise irrigation strategies.
+
+                By integrating advanced sensors and analytics into our solution, we aim to maximize water efficiency,
+                significantly reducing waste and ensuring that every drop of water is used effectively. 
+
+                We believe that our smart irrigation system will empower users with the tools they need to manage their
+                resources more intelligently, leading to healthier crops, increased yields, and a more sustainable
+                approach to agriculture. Our commitment extends beyond technology; we strive to drive innovation,
+                support sustainable farming practices, and foster a greener future for agriculture worldwide.
+            </p>
+        </div>
+    </div>
+
+    <div class=aboutUs id="aboutUs">
+        <h2>About Us</h2>
+        <div class="aboutUs-box">
+            <img src="images/logo.jpeg" alt="img2">
+            <p>
+
+                At Smart Irrigation Solutions, we combine technology and agriculture to enhance irrigation practices.
+                Our team of experts is dedicated to developing smart irrigation systems that use advanced sensors and
+                real-time data to optimize water usage and boost crop productivity.
+                Join
+                us in revolutionizing agriculture for a smarter, more sustainable world.</p>
+
+        </div>
+
+
+
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toogleMenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "300px";
+                }
+                else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+        <script src="https://kit.fontawesome.com/4f6367aa04.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
